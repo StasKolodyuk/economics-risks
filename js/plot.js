@@ -63,9 +63,12 @@ function createChart(seriesName, data, onDataChangeFunction) {
               }
             }*/
         },
+        yAxis: {
+          max: 1
+        },
         series: [{
             name: seriesName,
-            type: 'line',
+            type: 'spline',
             cursor: 'move',
             //draggableX: true,
             draggableY: true,
