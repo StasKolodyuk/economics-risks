@@ -72,6 +72,8 @@ function createChart(seriesName, data, onDataChangeFunction) {
             cursor: 'move',
             //draggableX: true,
             draggableY: true,
+            dragMaxY: 1,
+            dragMinY: 0,
             data: data
         }],
         plotOptions: {
